@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-SampleInterviewProject-iOS-SampleInterviewProject-iOSUITests/Pods-SampleInterviewProject-iOS-SampleInterviewProject-iOSUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
