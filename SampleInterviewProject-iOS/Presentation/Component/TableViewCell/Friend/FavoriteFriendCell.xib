@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="128" id="E4N-9k-nGT" customClass="FavoriteFriendCell" customModule="SampleInterviewProject_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E4N-9k-nGT" id="Gm0-gq-Rtq">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5rS-Dw-WM4">
+                        <rect key="frame" x="25" y="15" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="6aD-KI-Ycx"/>
+                            <constraint firstAttribute="width" constant="90" id="a7l-hY-0tY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITED" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ln4-p0-2Ro">
+                        <rect key="frame" x="140" y="35.5" width="253" height="19.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                        <color key="textColor" red="0.98039215690000003" green="0.71372549019999998" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Va-DL-VvS">
+                        <rect key="frame" x="140" y="61.5" width="253" height="27.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6Va-DL-VvS" secondAttribute="trailing" constant="25" id="FVb-xJ-4Yi"/>
+                    <constraint firstItem="5rS-Dw-WM4" firstAttribute="leading" secondItem="Gm0-gq-Rtq" secondAttribute="leading" constant="25" id="ISg-n4-y2c"/>
+                    <constraint firstItem="ln4-p0-2Ro" firstAttribute="leading" secondItem="5rS-Dw-WM4" secondAttribute="trailing" constant="25" id="dgi-Pc-Y8c"/>
+                    <constraint firstItem="6Va-DL-VvS" firstAttribute="centerY" secondItem="5rS-Dw-WM4" secondAttribute="centerY" constant="15" id="eZL-Lj-6W5"/>
+                    <constraint firstItem="6Va-DL-VvS" firstAttribute="leading" secondItem="5rS-Dw-WM4" secondAttribute="trailing" constant="25" id="ewa-Od-KsE"/>
+                    <constraint firstItem="ln4-p0-2Ro" firstAttribute="centerY" secondItem="5rS-Dw-WM4" secondAttribute="centerY" constant="-15" id="oN4-iq-cUZ"/>
+                    <constraint firstAttribute="trailing" secondItem="ln4-p0-2Ro" secondAttribute="trailing" constant="25" id="oy0-yZ-kjj"/>
+                    <constraint firstItem="5rS-Dw-WM4" firstAttribute="top" secondItem="Gm0-gq-Rtq" secondAttribute="top" constant="15" id="rqP-tT-4Xe"/>
+                    <constraint firstAttribute="bottom" secondItem="5rS-Dw-WM4" secondAttribute="bottom" constant="15" id="yHh-Ra-boC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="5rS-Dw-WM4" id="sPp-Nw-1Fp"/>
+                <outlet property="nameLabel" destination="6Va-DL-VvS" id="HN7-yV-hQO"/>
+            </connections>
+            <point key="canvasLocation" x="179.71014492753625" y="16.071428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

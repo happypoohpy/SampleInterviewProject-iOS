@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MEM-2O-QA1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Friends-->
+        <scene sceneID="EUf-C3-wzE">
+            <objects>
+                <viewController id="MEM-2O-QA1" customClass="FriendsViewController" customModule="SampleInterviewProject_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W8u-j3-iR7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xqb-v0-LLi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xqb-v0-LLi" firstAttribute="leading" secondItem="9dD-hP-9IL" secondAttribute="leading" id="6cA-HO-lPs"/>
+                            <constraint firstItem="9dD-hP-9IL" firstAttribute="bottom" secondItem="Xqb-v0-LLi" secondAttribute="bottom" id="LVr-rr-FVE"/>
+                            <constraint firstItem="Xqb-v0-LLi" firstAttribute="top" secondItem="9dD-hP-9IL" secondAttribute="top" id="eD7-nW-Ewa"/>
+                            <constraint firstItem="9dD-hP-9IL" firstAttribute="trailing" secondItem="Xqb-v0-LLi" secondAttribute="trailing" id="lKX-X8-goR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9dD-hP-9IL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Friends" leftItemsSupplementBackButton="YES" id="x3i-R3-8Xb">
+                        <barButtonItem key="leftBarButtonItem" title="Friends" image="ic_back_arrow" id="5Yr-sG-1KV">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="tapBack:" destination="MEM-2O-QA1" id="Io6-hG-24f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="friendsTableView" destination="Xqb-v0-LLi" id="iA2-sN-OsS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vD7-Q6-8eU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1210" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back_arrow" width="40" height="40"/>
+    </resources>
+</document>

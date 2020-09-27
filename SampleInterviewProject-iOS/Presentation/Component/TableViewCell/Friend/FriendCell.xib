@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="128" id="RDB-9A-kVr" customClass="FriendCell" customModule="SampleInterviewProject_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RDB-9A-kVr" id="JVE-QD-lrx">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Saw-ud-gwn">
+                        <rect key="frame" x="25" y="15" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="7q6-55-vl6"/>
+                            <constraint firstAttribute="width" constant="90" id="Uut-SG-qT7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYD-FC-NS5">
+                        <rect key="frame" x="140" y="46.5" width="253" height="27.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BYD-FC-NS5" firstAttribute="centerY" secondItem="Saw-ud-gwn" secondAttribute="centerY" id="1Yy-9Y-T2b"/>
+                    <constraint firstItem="BYD-FC-NS5" firstAttribute="leading" secondItem="Saw-ud-gwn" secondAttribute="trailing" constant="25" id="5Ej-pF-S26"/>
+                    <constraint firstAttribute="bottom" secondItem="Saw-ud-gwn" secondAttribute="bottom" constant="15" id="Rds-AF-dED"/>
+                    <constraint firstItem="Saw-ud-gwn" firstAttribute="top" secondItem="JVE-QD-lrx" secondAttribute="top" constant="15" id="T1p-e2-WlI"/>
+                    <constraint firstAttribute="trailing" secondItem="BYD-FC-NS5" secondAttribute="trailing" constant="25" id="gFI-AY-a65"/>
+                    <constraint firstItem="Saw-ud-gwn" firstAttribute="leading" secondItem="JVE-QD-lrx" secondAttribute="leading" constant="25" id="r8H-7L-3QR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="Saw-ud-gwn" id="S1w-7K-QkN"/>
+                <outlet property="nameLabel" destination="BYD-FC-NS5" id="8gH-QG-0zW"/>
+            </connections>
+            <point key="canvasLocation" x="179.71014492753625" y="16.071428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

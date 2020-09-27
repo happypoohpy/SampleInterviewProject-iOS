@@ -15,9 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        self.setupNavigationBar()
+        
         return true
     }
 
+    func setupNavigationBar() {
+        let barAppearance = UINavigationBar.appearance()
+        barAppearance.barTintColor = UIColor.black
+        barAppearance.tintColor = UIColor.white
+        barAppearance.titleTextAttributes =
+            [NSAttributedString.Key.foregroundColor: UIColor.white,
+             NSAttributedString.Key.font: UIFont.sample.openSansBold(size: 18.0)!]
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

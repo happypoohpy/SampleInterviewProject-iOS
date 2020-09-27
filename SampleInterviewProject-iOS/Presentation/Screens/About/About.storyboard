@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wCT-Ha-Kyg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About Navigation Controller-->
+        <scene sceneID="qL8-bG-lco">
+            <objects>
+                <navigationController id="wCT-Ha-Kyg" customClass="AboutNavigationController" customModule="SampleInterviewProject_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gg4-Xe-gmc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LBE-yZ-G2a" kind="relationship" relationship="rootViewController" id="0mY-u3-iVi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URM-Yu-S8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="938"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="gMa-rj-3zO">
+            <objects>
+                <viewController id="LBE-yZ-G2a" customClass="AboutViewController" customModule="SampleInterviewProject_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9mA-d5-TDc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bringing Breakthrough Brands To Life" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RE3-i9-suN">
+                                <rect key="frame" x="25" y="113" width="319.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9X-PH-6i6">
+                                <rect key="frame" x="25" y="151.5" width="364" height="116"/>
+                                <string key="text">When left-brained technical developers and brand builders join forces with right-brained creative specialists and visionaries, it sparks iconic moves and ingenuous innovation: breakthrough brands are brought to life!</string>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmG-cu-vgb">
+                                <rect key="frame" x="25" y="292.5" width="64.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.71372549019999998" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bmG-cu-vgb" firstAttribute="leading" secondItem="h5t-7p-Ya6" secondAttribute="leading" constant="25" id="1Cz-Nj-KEu"/>
+                            <constraint firstItem="RE3-i9-suN" firstAttribute="top" secondItem="h5t-7p-Ya6" secondAttribute="top" constant="25" id="1Kp-Bm-IYb"/>
+                            <constraint firstItem="bmG-cu-vgb" firstAttribute="top" secondItem="X9X-PH-6i6" secondAttribute="bottom" constant="25" id="BVq-Dl-uBE"/>
+                            <constraint firstItem="X9X-PH-6i6" firstAttribute="top" secondItem="RE3-i9-suN" secondAttribute="bottom" constant="15" id="TPo-Wq-2Io"/>
+                            <constraint firstItem="RE3-i9-suN" firstAttribute="leading" secondItem="h5t-7p-Ya6" secondAttribute="leading" constant="25" id="X8K-9s-9fY"/>
+                            <constraint firstItem="X9X-PH-6i6" firstAttribute="leading" secondItem="h5t-7p-Ya6" secondAttribute="leading" constant="25" id="Zlh-dW-JPz"/>
+                            <constraint firstAttribute="trailing" secondItem="X9X-PH-6i6" secondAttribute="trailing" constant="25" id="wGd-9Y-Q8v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h5t-7p-Ya6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="sV3-pK-MAP">
+                        <barButtonItem key="rightBarButtonItem" title="Close" id="wEB-Id-bhz">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="tapClose:" destination="LBE-yZ-G2a" id="4rX-VN-BcS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="versionLabel" destination="bmG-cu-vgb" id="Kav-ED-jLP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbG-3O-9uI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="938"/>
+        </scene>
+    </scenes>
+</document>
